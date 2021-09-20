@@ -9,6 +9,9 @@
   
   {#if description}
     <p id={descriptionKey}>{description}</p>
+    <!--@TODO - add requirements in a details/summary block. 
+        Can be automatically generated based on input requirements. 
+        i.e. "Number must be greater than 1 and less than 100"-->
   {/if}
   
   <slot {descriptionKey}></slot>

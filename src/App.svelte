@@ -1,4 +1,5 @@
 <script>
+  //@TODO - change to be a component: https://github.com/sveltejs/component-template
   import string from "./fields/string.svelte"
   import number from "./fields/number.svelte"
   export let customFields = []
@@ -15,8 +16,8 @@
 			},
       "product2": {
         "type": "string",
-        "minLength": 2,
-        "maxLength": 3
+        //"minLength": 2,
+        //"maxLength": 3
 			},
       "latitude": {
         "type": "number",
@@ -25,7 +26,7 @@
         "multipleOf" : 0.01
       },
 		},
-		"required": [ "product" ]
+		//"required": [ "product" ]
 	}
 
   const fields = {
@@ -44,7 +45,7 @@
       <svelte:component
         this={fields[value.type]} 
         {key} 
-        required={schema.required.includes(key)} 
+        required={schema.required ? schema.required.includes(key) : false} 
         {...value}
       />
     {/each}
