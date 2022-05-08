@@ -15,6 +15,9 @@
       },
       product2: {
         type: 'string',
+        enum: ['', '_self', '_blank', '_parent', '_top'],
+        component: 'select',
+        description: 'Hi',
         //"minLength": 2,
         //"maxLength": 3
       },

@@ -8,6 +8,7 @@
   export let path
   export let required = false
   export let data
+  export let description
   let value = rPath(path, data)
 </script>
 
@@ -15,13 +16,7 @@
   <legend>{key}</legend>
 
   {#each options as option}
-    <input 
-      type="radio" 
-      id={option} 
-      name={key}
-      checked={value === option ? true : undefined}
-      on:input={(e)=> changeHandler(option, path)}
-    >
-    <label for={option}>{option}</label><br/>
+    <input type="radio" id={option} name={key} checked={value === option ? true : undefined} on:input={(e) => changeHandler(option, path)} />
+    <label for={option}>{option}</label><br />
   {/each}
 </fieldset>

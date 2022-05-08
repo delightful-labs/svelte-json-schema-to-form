@@ -3,6 +3,7 @@
   import Number from '$lib/fields/Number.svelte'
   import Fieldset from '$lib/fields/Fieldset.svelte'
   import Radio from '$lib/fields/Radio.svelte'
+  import Select from '$lib/fields/Select.svelte'
   export let customFields = {}
   export let schema
   //Create empty data structure if none provided?
@@ -15,6 +16,7 @@
     number: Number,
     object: Fieldset,
     radio: Radio,
+    select: Select,
     ...customFields,
   }
 </script>
