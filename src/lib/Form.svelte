@@ -4,6 +4,7 @@
   import Fieldset from '$lib/fields/Fieldset.svelte'
   import Radio from '$lib/fields/Radio.svelte'
   import Select from '$lib/fields/Select.svelte'
+  import Range from '$lib/fields/Range.svelte'
   export let customFields = {}
   export let schema
   //Create empty data structure if none provided?
@@ -11,12 +12,13 @@
   export let changeHandler
   export let path
 
+  //@TODO: Let user replace default fields
   const fields = {
-    string: String,
     number: Number,
     object: Fieldset,
     radio: Radio,
     select: Select,
+    string: String,
     ...customFields,
   }
 </script>
