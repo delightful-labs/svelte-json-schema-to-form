@@ -1,6 +1,6 @@
 {
-  "name": "typesecript-svelte",
-  "version": "0.0.1",
+  "name": "svelte-json-schema-to-form",
+  "version": "0.0.001",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -12,7 +12,9 @@
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "ramda": "^0.28.0",
-    "svelte": "^3.46.0"
+    "svelte": "^3.46.0",
+    "svelte2tsx": "^0.5.9",
+    "typescript": "^4.6.4"
   },
   "type": "module"
 }
