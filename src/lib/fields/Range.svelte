@@ -9,13 +9,14 @@
   export let multipleOf = undefined
   export let changeHandler
   export let description
+  export let title
 
   const handleChange = (e, path) => {
     changeHandler(e.target.valueAsNumber, path)
   }
 </script>
 
-<Field {key} {description} {required} {data} {path} let:descriptionKey let:value>
+<Field {key} {description} {title} {required} {data} {path} let:descriptionKey let:value>
   <input
     type="range"
     id={key}

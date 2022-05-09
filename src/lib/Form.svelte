@@ -14,9 +14,10 @@
 
   //@TODO: Let user replace default fields
   const fields = {
-    number: Number,
     object: Fieldset,
+    number: Number,
     radio: Radio,
+    range: Range,
     select: Select,
     string: String,
     ...customFields,

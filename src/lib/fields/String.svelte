@@ -9,13 +9,14 @@
   export let data
   export let changeHandler
   export let path
+  export let title
   let value
   $: value = data[key] ? data[key] : ''
 
   //TODO: Check to make sure 'format' is a valid input type
 </script>
 
-<Field {key} {description} {required} {data} {path} let:descriptionKey let:value>
+<Field {key} {description} {title} {required} {data} {path} let:descriptionKey let:value>
   <input
     type={format ? format : 'text'}
     id={key}
