@@ -2,7 +2,9 @@
 node_modules
 /build
 /.svelte-kit
-/package
+# Temporarily added package directory.
+# @TODO: find way to release package.
+# /package
 .env
 .env.*
 !.env.example
