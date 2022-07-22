@@ -1,5 +1,5 @@
 <script>
-  import rPath from 'ramda/src/path'
+  import resolvePath from '../utils/resolvePath'
 
   let options
   export { options as enum }
@@ -10,7 +10,7 @@
   export let data
   export let description
   export let title
-  let value = rPath(path, data)
+  let value = resolvePath(path, data)
 </script>
 
 <fieldset>

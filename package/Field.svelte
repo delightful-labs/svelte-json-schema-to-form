@@ -1,5 +1,5 @@
 <script>
-  import rPath from 'ramda/src/path'
+  import resolvePath from './utils/resolvePath'
   export let key
   export let description
   export let required
@@ -7,7 +7,7 @@
   export let path
   export let title
   let descriptionKey = description ? `${key}-description` : undefined
-  let value = rPath(path, data)
+  let value = resolvePath(path, data)
 </script>
 
 <div>
